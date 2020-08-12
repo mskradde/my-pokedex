@@ -1,10 +1,10 @@
 import React from "react";
 import "./ListItem.css";
 
-function ListItem(props) {
+function ListItem({ href, children }) {
   return (
-    <a href={props.href} className="listItem">
-      {props.children}
+    <a href={href} className="listItem">
+      {children}
     </a>
   );
 }
