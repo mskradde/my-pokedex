@@ -1,6 +1,6 @@
 import React from "react";
 
-function list(props) {
+function List(props) {
   return <nav>{props.children}</nav>;
 }
-export default list;
+export default List;
