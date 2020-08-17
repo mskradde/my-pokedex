@@ -11,6 +11,9 @@
   place-items: center;
 }
 
+main {
+  overflow: auto;
+}
 .header__input {
   border: none;
   border-radius: 50px;
