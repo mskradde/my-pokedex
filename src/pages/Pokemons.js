@@ -41,7 +41,10 @@ function Pokemons() {
       <main className="colorful-border">
         <List>
           {filteredPokemons.map((pokemon) => (
-            <ListItem key={pokemon.id} href={pokemon.link}>
+            <ListItem
+              key={pokemon.id}
+              href={`/pokemons/${pokemon.name.toLowerCase()}`}
+            >
               <ListItemIcon
                 src={pokemon.imgSrc}
                 alt={`Picture of ${pokemon.name}`}

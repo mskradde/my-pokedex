@@ -9,6 +9,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import Items from "./pages/Items";
+import Pokemon from "./pages/Pokemon";
 
 function App() {
   return (
@@ -16,8 +17,12 @@ function App() {
       <div className="app">
         <Switch>
           <Route path="/pokemons/:name">
+            <Pokemon />
+          </Route>
+          <Route path="/pokemons">
             <Pokemons />
           </Route>
+
           <Route path="/items">
             <Items />
           </Route>
